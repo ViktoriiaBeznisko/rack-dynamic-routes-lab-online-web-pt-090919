@@ -4,9 +4,9 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
  
-    if req.path.match(/item/)
+    if req.path.match(/price/)
  
-      item_price = req.path.split("/item/").last
+      item_price = req.path.split("/price/").last
       price = @@item.find{|s| s.title == item_price}
  
       resp.write song.artist

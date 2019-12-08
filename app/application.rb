@@ -12,7 +12,7 @@ class Application
       resp.write item.price
       
     else
-      resp.write "Route not found"
+      resp.write "Item not foun"
       resp.status = 400
     end
  

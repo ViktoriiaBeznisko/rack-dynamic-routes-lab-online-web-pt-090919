@@ -13,7 +13,7 @@ class Application
       
     else
       resp.write "Item not foun"
-      resp.status = 400
+      resp.status = 404
     end
  
     resp.finish

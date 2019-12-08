@@ -9,7 +9,7 @@ class Application
       item_price = req.path.split("/price/").last
       price = @@item.find{|s| s.title == item_price}
  
-      resp.write song.artist
+      resp.write item.price
       
     else
       resp.write "Route not found"
